@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>All The Meats!</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<noscript>
+		<div style="border: 1px solid purple; padding: 10px">
+			<span style="color:red">This website is best viewed with JavaScript enabled</span>
+		</div>
+	</noscript>
+
+</head>
+<body style="background-color:lightgoldenrodyellow;" align="center">
+	<header>
+		<h1>All The Meats!</h1>
+	</header>
+	<hr />
+	<div id="navigation">
+		<ul class="nav nav-pills">
+			<li id="home"><a href="home.html" target="_blank"><span class="glyphicon glyphicon-home"></span></a></li>
+			<li id="menu"><a href="menu.html" target="_blank">Menu</a></li>
+			<li id="contactUs" class="active"><a href="contactUs.html" target="_blank">Contact Us</a></li>
+		</ul>
+	</div>
+	<hr />
+	<form action="submit.html" method="POST">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName"><br /><br />
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName"><br /><br />
+
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone"><br /><br />
+
+		<label for="reasonForInquiry">Reason for Inquiry:</label>
+		<select id="reasonForInquiry" name="reasonForInquiry">
+			<option value="default" selected>--Select One--</option>
+			<option value="Catering">Catering</option>
+			<option value="Private Party">Private Party</option>
+			<option value="Feedback">Feedback</option>
+			<option value="other">Other</option>
+		</select><br /><br />
+
+		<label for"additionalInformation">Additional Information:</label>
+		<textarea id="info" name="info"></textarea><br /><br />
+
+		<label for="haveYouBeenToTheRestaurant">Have you been to the restaurant?</label>
+		<input type="radio" id="choice1" name="questionnaire" value="yes">
+		<label for="choice1">Yes</label>
+		<input type="radio" id="choice2" name="questionnaire" value="no">
+		<label for="choice2">No</label><br /><br />
+
+		<label for="bestDaysToContactYou">Best days to contact you:</label>
+		<input type="checkbox" id="m" name="interest" value="m">
+		<label for="m">M</label>
+		<input type="checkbox" id="t" name="interest" value="t">
+		<label for="t">T</label>
+		<input type="checkbox" id="w" name="interest" value="w">
+		<label for="w">W</label>
+		<input type="checkbox" id="th" name="interest" value="th">
+		<label for="th">Th</label>
+		<input type="checkbox" id="f" name="interest" value="f">
+		<label for="f">F</label><br /><br />
+
+		<input type="submit" name="submit" value="Submit">
+	</form>
+	<hr />
+	<div id="address" align="center">
+		<footer>
+			<p>
+				444 South Kaser Dr., Wadsworth, OH  44281<br />
+				330-999-4444
+			</p>
+		</footer>
+	</div>
+
+</body>
+</html>
